@@ -16,4 +16,4 @@ If you install Alfred 2 and its support files in the standard path, the command 
 
 # Caution
 * You need to **HAVE** a *Mathematica* installed in your OS.
-* You need to ensure that your *Mathematica* is in the **STANDARD PATH**, which is `/Applications/Mathematica.app`. If not, you will need to change the file path to the MathKernel. To do this, please check file 
+* You need to ensure that your *Mathematica* is in the **STANDARD PATH**, which is `/Applications/Mathematica.app`. If not, you will need to change the file path to the MathKernel. To do this, please check the variable `mathkernel_path` in file `MathKernelToggle.py`. 
