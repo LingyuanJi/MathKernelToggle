@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>A503A54D-3942-4299-AE49-ACA87F386CB1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CD433B8D-3483-46EB-9527-06E00FADE893</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CA8F4F14-0A7F-4C37-8C86-FD952BFF6997</key>
 		<array>
 			<dict>
@@ -17,6 +30,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -25,6 +40,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -33,6 +50,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>Hit RET to Copy to Front Most</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -53,13 +72,15 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>9EF407AC-A27F-4668-B80A-B434256A6B76</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -68,11 +89,7 @@
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -84,17 +101,19 @@
 			<key>uid</key>
 			<string>1C9E5573-E7E8-4244-99CC-ACE8FBD618C9</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ker</string>
+				<string>kernel</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -107,6 +126,10 @@
 				<string>Computing... Please Wait...</string>
 				<key>script</key>
 				<string>python MathKernelToggle.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Input the Expression to Compute</string>
 				<key>title</key>
@@ -121,7 +144,7 @@
 			<key>uid</key>
 			<string>CA8F4F14-0A7F-4C37-8C86-FD952BFF6997</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -130,13 +153,51 @@
 				<true/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>746A6B8D-B538-45ED-8687-E45F1DDA7100</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>kernelpath</string>
+				<key>subtext</key>
+				<string>hit RET to open the file</string>
+				<key>text</key>
+				<string>Open the File Specifying the MathKernel Path</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A503A54D-3942-4299-AE49-ACA87F386CB1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>MathKernelPath.txt</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CD433B8D-3483-46EB-9527-06E00FADE893</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -145,23 +206,45 @@
 	<dict>
 		<key>1C9E5573-E7E8-4244-99CC-ACE8FBD618C9</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
-			<real>110</real>
+			<integer>150</integer>
 		</dict>
 		<key>746A6B8D-B538-45ED-8687-E45F1DDA7100</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>370</real>
 		</dict>
 		<key>9EF407AC-A27F-4668-B80A-B434256A6B76</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>A503A54D-3942-4299-AE49-ACA87F386CB1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
 		<key>CA8F4F14-0A7F-4C37-8C86-FD952BFF6997</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>230</real>
+		</dict>
+		<key>CD433B8D-3483-46EB-9527-06E00FADE893</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<integer>510</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

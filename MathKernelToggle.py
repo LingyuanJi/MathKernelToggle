@@ -1,12 +1,15 @@
+# coding=utf-8
 import subprocess
 import re
 import sys
 from workflow import Workflow
 
-mathkernel_path=u"/Applications/Mathematica.app/Contents/MacOS/MathKernel"
-
 def main(wf):
-	query = wf.args[0]
+
+	with open("MathKernelPath.txt","r") as mkf:
+		mathkernel_path = mkf.read().strip()
+
+	query = unicode(wf.args[0])
 	with open("temp.m","w") as temp_file:
 		file_content = unicode("Print["+query+"]")
 		temp_file.write(file_content)
