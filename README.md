@@ -1,5 +1,5 @@
 # MathKernelToggle
-A Python-based Alfred 2 Workflow to toggle Mathematica Kernel to do computations.
+A Python-based Alfred 3 Workflow to toggle Mathematica Kernel to do computations.
 
 # Main Features
 * First, input the keyword `ker`, then input the query string `query`.
