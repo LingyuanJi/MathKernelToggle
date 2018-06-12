@@ -2,18 +2,15 @@
 A Python-based Alfred 3 Workflow to toggle Mathematica Kernel to do computations.
 
 # Main Features
-* First, input the keyword `ker`, then input the query string `query`.
-* Then, the `query` will be sent to MathKernel of your OS.
-* Result or errors will be formatted in `XML`.
-* Display the `XML` file in Alfred using Python library `Alfred-Workflow`.
+* First, input the keyword `kernel`, then input the query string `query`.
+* Then, the `query` will be sent to `/usr/local/bin/wolframscript -code`.
+* It's `stdout` is then handled by Python library [`Alfred-Workflow`](https://github.com/deanishe/alfred-workflow).
 * Hit `RET` to copy the result to your clipboard or hit `Command+RET` to directly paste the answer to the front most App.
+* Update is checked before every run.
 
 # Installation 
 Open your Terminal and execute:  
-`$ git clone https://github.com/LingyuanJi/MathKernelToggle.git /path/to/your/workflow/`  
-If you install Alfred 2 and its support files in the standard path, the command should be:  
-`$ git clone https://github.com/LingyuanJi/MathKernelToggle.git ~/Library/Application\ Support/Alfred\ 2/Alfred.alfredpreferences/workflows/`
+`$ git clone git@github.com:LingyuanJi/math-kernel-toggle.git /path/to/your/workflow/`  
 
 # Caution
-* You need to **HAVE** a *Mathematica* installed in your OS.
-* You need to ensure that your *Mathematica* is in the **STANDARD PATH**, which is `/Applications/Mathematica.app`. If not, you will need to change the file path to the MathKernel. To do this, use the keyword `kernelpath` to open the file storing the kernel path. Modify this file to meet need and save. 
+* You need to **HAVE** a *Mathematica 11* installed into your macOS, along with the commandline executable `/usr/local/bin/wolframscript`.
