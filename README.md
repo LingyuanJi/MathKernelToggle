@@ -2,6 +2,9 @@
 A Python-based Alfred 3 Workflow to toggle Mathematica Kernel to do computations.
 
 # Main Features
+
+![alt text](https://github.com/LingyuanJi/math-kernel-toggle/raw/master/example.png)
+
 * First, input the keyword `kernel`, then input the query string `query`.
 * Then, the `query` will be sent to `/usr/local/bin/wolframscript -code`.
 * It's `stdout` is then handled by Python library [`Alfred-Workflow`](https://github.com/deanishe/alfred-workflow).
