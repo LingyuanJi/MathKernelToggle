@@ -8,19 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>A503A54D-3942-4299-AE49-ACA87F386CB1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CD433B8D-3483-46EB-9527-06E00FADE893</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CA8F4F14-0A7F-4C37-8C86-FD952BFF6997</key>
 		<array>
 			<dict>
@@ -108,6 +95,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -125,7 +116,7 @@
 				<key>runningsubtext</key>
 				<string>Computing... Please Wait...</string>
 				<key>script</key>
-				<string>python MathKernelToggle.py "{query}"</string>
+				<string>/usr/bin/python math-kernel-toggle.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -163,42 +154,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>kernelpath</string>
-				<key>subtext</key>
-				<string>hit RET to open the file</string>
-				<key>text</key>
-				<string>Open the File Specifying the MathKernel Path</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A503A54D-3942-4299-AE49-ACA87F386CB1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>MathKernelPath.txt</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CD433B8D-3483-46EB-9527-06E00FADE893</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -225,26 +180,12 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>A503A54D-3942-4299-AE49-ACA87F386CB1</key>
-		<dict>
-			<key>xpos</key>
-			<integer>300</integer>
-			<key>ypos</key>
-			<integer>510</integer>
-		</dict>
 		<key>CA8F4F14-0A7F-4C37-8C86-FD952BFF6997</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
 			<real>230</real>
-		</dict>
-		<key>CD433B8D-3483-46EB-9527-06E00FADE893</key>
-		<dict>
-			<key>xpos</key>
-			<integer>700</integer>
-			<key>ypos</key>
-			<integer>510</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
