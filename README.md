@@ -9,8 +9,8 @@ A Python-based Alfred 3 Workflow to toggle Mathematica Kernel to do computations
 * Update is checked before every run.
 
 # Installation 
-Open your Terminal and execute:  
-`$ git clone git@github.com:LingyuanJi/math-kernel-toggle.git /path/to/your/workflow/`  
+`cd` to your `workflows` folder and execute:  
+`$ git clone git@github.com:LingyuanJi/math-kernel-toggle.git`  
 
 # Caution
 * You need to **HAVE** a *Mathematica 11* installed into your macOS, along with the commandline executable `/usr/local/bin/wolframscript`.
